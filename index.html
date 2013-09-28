@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>The RemoteDebug Initiative</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="inner">
+      <div class="media">
+        <div class="img logo">
+          <span class="icon-cloud icon-big"></span>
+          <span class="icon-resize-horizontal icon-arrow"></span>
+        </div>
+        <div class="bd">
+          <h1>RemoteDebug</h1>
+          <h2>Initiative to unify remote debugging across browsers.</h2>
+        </div>
+      </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>The initiative.</h2>
+      <p>RemoteDebug is an intiative to bring a common remote debugging protocol to today's browsers. It insn't a new phenomen. It has been around for years, but today each browser got their own, so we got:</p>
+      <ul>
+        <li>Chrome Remote Debugging Protocol.</li>
+        <li>Opera Scope Transport Protocol (STP).</li>
+        <li>Mozilla Remote Debugging Protocol.</li>
+        <li>WebKit Remote Debugging Protocol (WIP).</li>
+      </ul>
+      <p>Each are incompatible with each other, which means existing DevTools can't debug other browsers, and tooling implementor's need to spent a lot of time adding support for each protocol (and this means no-body does it).</p>
+      <p>The vision for this intiative is to enable in-browser DevTools and editors to communicate and remote multiple-browsers. Imagine if it was possible to use Chrome DevTools to debug Firefox, or use Firefox DevTools to debug Chrome. What if you could debug your app in IE and Chrome directly from Sublime? When running your beautiful PhoneGab-app inside an embeded WebView, you should be able to use your favorite debugging tool, and not be forced you to use Weinre.</p>
+      <p></p>
+      <p>We are building for the open web. Our tooling and protocols should be open too.</p>
+    </section>
+
+    <section>
+      <h2>The plan.</h2>
+      <p>So how are we going to make this happen? Instead of starting from skretch, we propose to use the existing Chrome Remote debugging protocol. </p>
+      <p>Why, you might ask? The Chrome protocol is [well-documented](link), and is an open protocol. The protocol is used by Chromium-based browsers, which means we, out of the box, got Chrome and Opera supported. In addition we also got a Webkit-protocol-to Chrome proxy implemented, so by having three browsers supported, we think we are off to a great start.
+    </section>
+
+    <section>
+      <h2>Get involved.</h2>
+      <p>There's a lot of work ahead, so we need your help. You can help by either spreading the word, by contributing to one of the existing projects, or maybe even start you own? </p>
+      <p>If you do your own thing, let us know, so we can add it to the project list.</p>
+    </section>
+
+    <section class="implementations">
+      <h2>Implementations and tools.</h2>
+
+      <ul>
+        <li>
+          <h3><a href="https://github.com/google/ios-webkit-debug-proxy">ios-webkit-debug-proxy</a></h3>
+          <p>A DevTools proxy (WebKit Remote Debugging Protocol) for iOS devices (Safari Remote Web Inspector).</p>
+        </li>
+
+        <li>
+          <h3><a href="https://github.com/node-inspector/node-inspector">node-inspector</a></h3>
+          <p>Node debugger based on Blink Developer Tools</p>
+        </li>
+
+        <li>
+          <h3><a href="https://github.com/node-inspector/node-inspector">node-chrome-remote-debug</a></h3>
+          <p>Node client for the Chrome Remote debugging protocol.</p>
+        </li>
+      <ul>
+    </section>
+
+
+    <footer>
+      <div class="inner text">
+        <p>The RemoteDebug initiative is started by <a href="http://kenneth.io">Kenneth Auchenberg</a>.</p>
+      </div>
+
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="auchenberg" data-related="auchenberg">Tweet</a>
+      <a href="https://twitter.com/auchenberg" class="twitter-follow-button" data-show-count="true">Follow @auchenberg</a>
+    </footer>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </body>
+</html>
