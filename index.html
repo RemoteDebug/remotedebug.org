@@ -24,22 +24,21 @@
 
     <section>
       <h2>The initiative.</h2>
-      <p>RemoteDebug is an intiative to bring a common remote debugging protocol to today's browsers. It insn't a new phenomen. It has been around for years, but today each browser got their own, so we got:</p>
+      <p>RemoteDebug is an initiative to bring a common remote debugging protocol to today's browsers. It isn't a new phenomenon. It has been around for years, but today each browser got their own, so we got:</p>
       <ul>
         <li>Chrome Remote Debugging Protocol.</li>
         <li>Opera Scope Transport Protocol (STP).</li>
         <li>Mozilla Remote Debugging Protocol.</li>
         <li>WebKit Remote Debugging Protocol (WIP).</li>
       </ul>
-      <p>Each are incompatible with each other, which means existing DevTools can't debug other browsers, and tooling implementor's need to spent a lot of time adding support for each protocol (and this means no-body does it).</p>
-      <p>The vision for this intiative is to enable in-browser DevTools and editors to communicate and remote multiple-browsers. Imagine if it was possible to use Chrome DevTools to debug Firefox, or use Firefox DevTools to debug Chrome. What if you could debug your app in IE and Chrome directly from Sublime? When running your beautiful PhoneGab-app inside an embeded WebView, you should be able to use your favorite debugging tool, and not be forced you to use Weinre.</p>
-      <p></p>
+      <p>Each are incompatible with each other, which means existing DevTools can't debug other browsers, and tooling implementors need to spent a lot of time adding support for each protocol (and this means nobody does it).</p>
+      <p>The vision for this initiative is to enable in-browser DevTools and editors to communicate and remote multiple browsers. Imagine if it was possible to use Chrome DevTools to debug Firefox, or use Firefox DevTools to debug Chrome. What if you could debug your app in IE and Chrome directly from Sublime? When running your beautiful PhoneGap-app inside an embedded WebView, you should be able to use your favorite debugging tool, and not be forced you to use Weinre.</p>
       <p>We are building for the open web. Our tooling and protocols should be open too.</p>
     </section>
 
     <section>
       <h2>The plan.</h2>
-      <p>So how are we going to make this happen? Instead of starting from skretch, we propose to use the existing Chrome Remote debugging protocol. </p>
+      <p>So how are we going to make this happen? Instead of starting from scratch, we propose to use the existing Chrome Remote debugging protocol.</p>
       <p>Why, you might ask? The Chrome protocol is [well-documented](link), and is an open protocol. The protocol is used by Chromium-based browsers, which means we, out of the box, got Chrome and Opera supported. In addition we also got a Webkit-protocol-to Chrome proxy implemented, so by having three browsers supported, we think we are off to a great start.
     </section>
 
