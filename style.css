@@ -22,18 +22,27 @@ h2 {
   margin: 0;
 }
 
-p {
+p, ul > li {
   line-height: 180%;
 }
 
-ul li {
-  line-height: 180%;
+.media  {
+  vertical-align: top;
+}
+
+.media .img {
+  display: inline-block;
+}
+
+.media .bd {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .inner,
 section {
   max-width: 900px;
-  padding: 30px 30px 30px 30px;
+  padding: 0 30px 30px 30px;
   margin: 0 auto;
 }
 
@@ -48,19 +57,6 @@ section.implementations li {
 
 section.implementations a {
   color: inherit;
-}
-
-.media  {
-  vertical-align: top;
-}
-
-.media .img {
-  display: inline-block;
-}
-
-.media .bd {
-  display: inline-block;
-  vertical-align: top;
 }
 
 header {
