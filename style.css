@@ -26,17 +26,22 @@ p, ul > li {
   line-height: 180%;
 }
 
+.overview-img {
+  max-width: 800px;
+  width: 100%;
+}
+
 .media  {
   vertical-align: top;
 }
 
 .media .img {
-  display: inline-block;
+  float: left;
 }
 
 .media .bd {
-  display: inline-block;
-  vertical-align: top;
+  overflow: hidden;
+  zoom: 1;
 }
 
 .inner,
@@ -46,18 +51,6 @@ section {
   margin: 0 auto;
 }
 
-section.implementations {
-  background: rgba(147, 128, 108, 0.1);
-  padding: 30px;
-}
-
-section.implementations li {
-  list-style: none;
-}
-
-section.implementations a {
-  color: inherit;
-}
 
 header {
   background: rgba(147, 128, 108, 0.1);
@@ -80,7 +73,7 @@ header .logo {
 }
 
 header .bd {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 header .logo .icon-big {
@@ -97,34 +90,69 @@ header .logo .icon-arrow {
   bottom: 20px;
 }
 
-footer {
-  width: 100%;
+header .social {
+  margin-top: 20px;
+}
+
+header .social iframe {
+  margin-bottom: 10px;
+}
+
+section.implementations {
+  background: rgba(147, 128, 108, 0.1);
+  padding: 30px;
+}
+
+section.implementations li {
+  list-style: none;
+  min-height: 100px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+section.implementations li .img {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
   text-align: center;
 }
 
-footer > a {
-  display: none;
+section.implementations li h3 {
+  margin: 0;
 }
 
-footer > iframe {
-  display: inline-block;
-  margin: 0 0 1em;
-  vertical-align: top;
+section.implementations li .img > img {
+  width: 40px;
 }
 
-footer .twitter-share-button {
-  width: 100px !important;
+section.implementations li.node img {
+  padding-top: 20px;
 }
 
-footer .text {
-  text-align: left;
+section.implementations a {
+  color: inherit;
 }
 
-footer .text p {
-  font-size: 12px;
+section.implementations ul {
+  margin: 0;
+  padding: 0;
+}
+
+.implementations .img {
+  margin-right: 20px;
 }
 
 @media (max-width: 700px) {
+
+
+  header .media .img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+
 
   .content {
     margin: 0 auto;
@@ -132,6 +160,7 @@ footer .text p {
 
   h1 {
     font-size: 30px;
+    margin-bottom: 10px;
   }
 
   h2 {
