@@ -22,6 +22,11 @@ h2 {
   margin: 0;
 }
 
+a:link,
+a:visited {
+  color: #428BCA;
+}
+
 p, ul > li {
   line-height: 180%;
 }
@@ -163,7 +168,6 @@ section.comments {
 }
 
 @media (max-width: 700px) {
-
 
   header .media .img {
     display: block;
