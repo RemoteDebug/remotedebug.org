@@ -35,32 +35,32 @@
       <p>Today each browser vendor is building their own tailormade in-browser development tool (DevTool), together with their own protocol to enable remote debugging of browsers across devices.</p>
       <img src="images/protocol_overview.png" class="overview-img" />
 
-      <p>Each protocol are incompatible, which means existing DevTools can't debug other browsers, and tooling implementor's needs to out a lot of effort adding support for each protocol, with the result that we haven't seen that many integrations.</p>
+      <p>These protocols are incompatible, which means existing DevTools can't debug other browsers, and tooling implementers needs to put a lot of effort into adding support for each protocol, with the result that we haven't seen that many integrations.</p>
       <p></p>
-      <p>The open web follows standards. Our tool should too.</p>
+      <p>The open web follows standards. Our tools should too.</p>
     </section>
 
     <section>
       <h2>The vision.</h2>
-      <p>The vision is to enable a new generation of in-browser DevTools and editors to communicate with our browser's.</p>
+      <p>The vision is to enable a new generation of DevTools and editors to communicate with our browsers.</p>
       <p>A few thoughts:</p>
       <ul>
         <li>What if it was possible to use Chrome DevTools to debug Firefox, or use Firefox DevTools to debug Chrome?</li>
         <li>What if you could debug your app in IE and Chrome directly from Sublime Text?</li>
         <li>What if the browser had an API, you could use to extract and manipulate information, to build better development tools?</li>
-        <li>What if you could use your favorite debugging tool to debug your beautiful PhoneGab-app inside an embeded WebView?</li>
+        <li>What if you could use your favorite debugging tool to debug your beautiful PhoneGap-app inside an embeded WebView?</li>
       <ul>
     </section>
 
     <section>
       <h2>The plan.</h2>
-      <p>The long-term goal is to get all major browser vendors to implement and use the "RemoteDebug protocol", but we know this is going to take some time, especially to get everyone on board, so how are we going to make this happen?</p>
+      <p>The long-term goal is to get all major browser vendors to implement and use the "RemoteDebug protocol", but we know this is going to take some time, especially to get everyone on board. So how are we going to make this happen?</p>
       <p>To get a baseline, we propose to use the existing <a href="https://developers.google.com/chrome-developer-tools/docs/debugger-protocol" target="_blank">Chrome Remote debugging protocol</a> as our starting point to define what we would call the "RemoteDebug protocol".</p>
-      <p>The reason for choosing the <a href="https://developers.google.com/chrome-developer-tools/docs/debugger-protocol" target="_blank">Chrome Remote debugging protocol</a> is simply that both the protocol and API is documented. The protocol is a part of <a href="http://www.chromium.org/" target="_blank">Chromium</a>, which is used by both <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Chrome</a> and <a href="http://www.opera.com/" target="_blank">Opera</a>, which means we got two browsers supported, and in addition we already have several editors and tools who have integrated with the protocol.</p>
+      <p>The reason for choosing the <a href="https://developers.google.com/chrome-developer-tools/docs/debugger-protocol" target="_blank">Chrome Remote debugging protocol</a> is simply that both the protocol and API are documented. The protocol is a part of <a href="http://www.chromium.org/" target="_blank">Chromium</a>, which is used by both <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Chrome</a> and <a href="http://www.opera.com/" target="_blank">Opera</a>, which means we got two browsers supported, and in addition we already have several editors and tools who have integrated with the protocol.</p>
 
       <img src="images/remotedebug_overview.png" class="overview-img" />
 
-      <p>With the protocol in place, the first step is to provide bridge-implementations for all major browsers, in order to enable cross-browser communication. Once we have the bridges in place, each browser-vendor can start implement RemoteDebug into their browser and their related DevTool, to bring us to a native baseline</p>
+      <p>With the protocol in place, the first step is to provide bridge-implementations for all major browsers, in order to enable cross-browser communication. Once we have the bridges in place, each browser-vendor can start implement RemoteDebug into their browser and their related DevTool, to bring us to a native baseline.</p>
       <p>When we get there - a new world of web tooling has openend.</p>
     </section>
 
@@ -71,7 +71,7 @@
 
     <section>
       <h2>Get involved.</h2>
-      <p>We got a a lot of work ahead, so we need your help. The first thing you should do is to help us by spreading the word by tweeting and telling the world about this initative. Secondly you should contribute to one of the open-source projects, so we can increase the usage of RemoteDebug.</p>
+      <p>We've got a lot of work ahead, so we need your help. The first thing you should do is to help us by spreading the word by tweeting and telling the world about this initative. Secondly you should contribute to one of the open-source projects, so we can increase the usage of RemoteDebug.</p>
       <p>We need to make this happen. It's about time.</p>
     </section>
 
