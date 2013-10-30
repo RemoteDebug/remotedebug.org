@@ -68,6 +68,7 @@ header .logo {
   height: 185px;
   width: 220px;
   margin-right: 20px;
+  text-decoration: none;
 
   display: inline-block;
 }
@@ -99,15 +100,25 @@ header .social iframe {
 }
 
 section.implementations {
+}
+
+section.implementations > .sub {
   background: rgba(147, 128, 108, 0.1);
-  padding: 30px;
 }
 
 section.implementations li {
   list-style: none;
-  min-height: 100px;
-  margin-bottom: 20px;
+  min-height: 80px;
   border-bottom: 1px solid #fff;
+  padding: 20px;
+}
+
+section.implementations li p {
+  margin-bottom: 0;
+}
+
+section.implementations li h3 {
+  margin: 0;
 }
 
 section.implementations li .img {
@@ -119,16 +130,12 @@ section.implementations li .img {
   text-align: center;
 }
 
-section.implementations li h3 {
-  margin: 0;
-}
-
 section.implementations li .img > img {
   width: 40px;
 }
 
 section.implementations li.node img {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 section.implementations a {
