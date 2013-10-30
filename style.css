@@ -148,6 +148,13 @@ section.implementations .italic {
   margin-right: 20px;
 }
 
+
+section.comments {
+  background: rgba(147, 128, 108, 0.1);
+  padding: 30px;
+  max-width: 100%;
+}
+
 @media (max-width: 700px) {
 
 
