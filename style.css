@@ -140,6 +140,10 @@ section.implementations ul {
   padding: 0;
 }
 
+section.implementations .italic {
+  font-style: italic;
+}
+
 .implementations .img {
   margin-right: 20px;
 }
