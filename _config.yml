@@ -1,0 +1,4 @@
+pygments: true
+domain: remotedebug.org
+source:      .
+destination: ./_site
