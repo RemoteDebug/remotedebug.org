@@ -27,6 +27,10 @@ a:visited {
   color: #428BCA;
 }
 
+.italic {
+  font-style: italic;
+}
+
 p, ul > li {
   line-height: 180%;
 }
@@ -38,15 +42,16 @@ p, ul > li {
 
 .media  {
   vertical-align: top;
-}
 
-.media .img {
-  float: left;
-}
+  .img {
+    float: left;
+  }
 
-.media .bd {
-  overflow: hidden;
-  zoom: 1;
+  .bd {
+    overflow: hidden;
+    zoom: 1;
+  }
+
 }
 
 .inner,
@@ -57,15 +62,46 @@ section {
 }
 
 
-header {
-  background: rgba(147, 128, 108, 0.1);
-  padding: 30px 0;
-  margin-bottom: 30px;
+nav {
+  display: block;
+  border-bottom: 1px solid #E7E7E7;
+
+  .inner {
+    padding: 0;
+  }
+
+  ul {
+    overflow: hidden;
+    min-height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    position: relative;
+    display: block;
+
+    > a {
+      display: block;
+      padding: 10px 15px;
+      line-height: 30px;
+    }
+
+  }
+
 }
 
-header h2 {
-  margin: 0;
-  font-weight: 400;
+header {
+  background: rgba(147, 128, 108, 0.1);
+  padding: 30px 0 0 0;
+  margin-bottom: 30px;
+
+  h2 {
+    margin: 0;
+    font-weight: 400;
+  }
+
 }
 
 header .logo {
@@ -107,32 +143,38 @@ header .social iframe {
 section.implementations {
 }
 
-section.implementations > .sub {
+ul.sub {
   background: rgba(147, 128, 108, 0.1);
 }
 
-section.implementations li {
+ul.sub li {
   list-style: none;
   min-height: 80px;
   border-bottom: 1px solid #fff;
   padding: 20px;
-}
 
-section.implementations li p {
-  margin-bottom: 0;
-}
+  h3 {
+    margin: 0;
+  }
 
-section.implementations li h3 {
-  margin: 0;
-}
+  p {
+    margin-bottom: 0;
+  }
 
-section.implementations li .img {
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
+  a {
+    color: inherit;
+  }
+
+  .img {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+
+
 }
 
 section.implementations li .img > img {
@@ -143,23 +185,14 @@ section.implementations li.node img {
   padding-top: 10px;
 }
 
-section.implementations a {
-  color: inherit;
-}
-
 section.implementations ul {
   margin: 0;
   padding: 0;
 }
 
-section.implementations .italic {
-  font-style: italic;
-}
-
 .implementations .img {
   margin-right: 20px;
 }
-
 
 section.comments {
   background: rgba(147, 128, 108, 0.1);
@@ -193,4 +226,13 @@ section.comments {
     font-size: 15px;
   }
 
+}
+
+
+
+.compatibility {
+  background: rgba(147, 128, 108, 0.1);
+  padding: 30px;
+
+  width: 100%;
 }
