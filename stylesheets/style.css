@@ -180,5 +180,22 @@ section.comments {
 .compatibility {
   background: rgba(147, 128, 108, 0.1);
   padding: 30px;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  border-color: #808080;
   width: 100%;
+}
+.compatibility tr {
+  border: 0;
+}
+.compatibility td {
+  border: 1px solid #fff;
+  padding: 5px;
+}
+.compatibility h3 {
+  margin: 0;
+}
+.compatibility .yes {
+  background-color: #CF9;
+  color: #030;
 }
