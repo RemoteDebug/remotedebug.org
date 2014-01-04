@@ -23,6 +23,12 @@ layout: default
         </tr>
 
         <tr>
+          <td colspan="5">
+            <h3>Operations:</h3>
+          </td>
+        </tr>
+
+        <tr>
           <td class="declaration">
             <div class="name">clearMessages</div>
           </td>
@@ -36,7 +42,7 @@ layout: default
           <td class="declaration">
             <div class="name">enable</div>
           </td>
-          <td class="comp yes" colspan="1">Yes</td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/console#command-enable">enable</a></td>
           <td class="comp yes" colspan="1"></td>
           <td class="comp yes" colspan="1"></td>
           <td class="comp yes" colspan="1"></td>
@@ -46,7 +52,7 @@ layout: default
           <td class="declaration">
             <div class="name">disable</div>
           </td>
-          <td class="comp yes" colspan="1">Yes</td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/console#command-disable">disable</a></td>
           <td class="comp yes" colspan="1"></td>
           <td class="comp yes" colspan="1"></td>
           <td class="comp yes" colspan="1"></td>
@@ -57,7 +63,7 @@ layout: default
             <div class="name">startListeners</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
+          <td class="comp yes" colspan="1"><a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/webconsole.js#L1297">startListeners</a></td>
           <td class="comp no" colspan="1"></td>
           <td class="comp no" colspan="1"></td>
         </tr>
@@ -67,7 +73,7 @@ layout: default
             <div class="name">stopListeners</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
+          <td class="comp yes" colspan="1"><a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/webconsole.js#L1298">stopListeners</a></td>
           <td class="comp no" colspan="1"></td>
           <td class="comp no" colspan="1"></td>
         </tr>
@@ -87,7 +93,7 @@ layout: default
             <div class="name">evaluateJS</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
+          <td class="comp yes" colspan="1"><a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/webconsole.js#L1300">evaluateJS</a></td>
           <td class="comp no" colspan="1"></td>
           <td class="comp no" colspan="1"></td>
         </tr>
@@ -97,7 +103,7 @@ layout: default
             <div class="name">autocomplete</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
+          <td class="comp yes" colspan="1"><a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/webconsole.js#L1301">autocomplete</a></td>
           <td class="comp no" colspan="1"></td>
           <td class="comp no" colspan="1"></td>
         </tr>
@@ -107,7 +113,7 @@ layout: default
             <div class="name">getPreferences</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
+          <td class="comp yes" colspan="1"><a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/webconsole.js#L1303">getPreferences</a></td>
           <td class="comp no" colspan="1"></td>
           <td class="comp no" colspan="1"></td>
         </tr>
@@ -117,7 +123,7 @@ layout: default
             <div class="name">setPreferences</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
+          <td class="comp yes" colspan="1"><a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/webconsole.js#L1304">setPreferences</a></td>
           <td class="comp no" colspan="1"></td>
           <td class="comp no" colspan="1"></td>
         </tr>
@@ -127,7 +133,7 @@ layout: default
             <div class="name">sendHTTPRequest</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
+          <td class="comp yes" colspan="1"><a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/webconsole.js#L1305">sendHTTPRequest</a></td>
           <td class="comp no" colspan="1"></td>
           <td class="comp no" colspan="1"></td>
         </tr>
@@ -137,8 +143,8 @@ layout: default
             <div class="name">setMonitoringXHREnabled</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
           <td class="comp no" colspan="1"></td>
+          <td class="comp yes" colspan="1"><a href="http://trac.webkit.org/browser/trunk/Source/WebInspectorUI/Versions/Inspector-iOS-7.0.json#L757">setMonitoringXHREnabled</a></td>
           <td class="comp no" colspan="1"></td>
         </tr>
 
@@ -147,8 +153,8 @@ layout: default
             <div class="name">addInspectedNode</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
           <td class="comp no" colspan="1"></td>
+          <td class="comp yes" colspan="1"><a href="http://trac.webkit.org/browser/trunk/Source/WebInspectorUI/Versions/Inspector-iOS-7.0.json#L764">addInspectedNode</a></td>
           <td class="comp no" colspan="1"></td>
         </tr>
 
@@ -157,9 +163,45 @@ layout: default
             <div class="name">addInspectedHeapObject</div>
           </td>
           <td class="comp no" colspan="1"></td>
-          <td class="comp yes" colspan="1">Yes</td>
           <td class="comp no" colspan="1"></td>
+          <td class="comp yes" colspan="1"><a href="http://trac.webkit.org/browser/trunk/Source/WebInspectorUI/Versions/Inspector-iOS-7.0.json#L771">addInspectedHeapObject</a></td>
           <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td colspan="5">
+            <h3>Events</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">messageAdded</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/console#event-messageAdded">messageAdded</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp yes" colspan="1"><a href="http://trac.webkit.org/browser/trunk/Source/WebInspectorUI/Versions/Inspector-iOS-7.0.json#L779">messageAdded</a></td>
+          <td class="comp yes" colspan="1"><a href="http://operasoftware.github.io/scope-interface/ConsoleLogger.html#OnConsoleMessage">OnConsoleMessage</a></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">messagesCleared</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/console#event-messagesCleared">messagesCleared</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp yes" colspan="1"><a href="http://trac.webkit.org/browser/trunk/Source/WebInspectorUI/Versions/Inspector-iOS-7.0.json#L793">messagesCleared</a></td>
+          <td class="comp yes" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">messageRepeatCountUpdated</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/console#event-messageRepeatCountUpdated">messageRepeatCountUpdated</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp yes" colspan="1"><a href="http://trac.webkit.org/browser/trunk/Source/WebInspectorUI/Versions/Inspector-iOS-7.0.json#L786">messageRepeatCountUpdated</a></td>
+          <td class="comp yes" colspan="1"></td>
         </tr>
 
     </tbody>
