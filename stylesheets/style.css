@@ -60,15 +60,14 @@ nav .inner {
   padding: 0;
 }
 nav ul {
-  overflow: hidden;
   min-height: 50px;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 nav li {
-  float: left;
   position: relative;
-  display: block;
+  display: inline-block;
 }
 nav li > a {
   display: block;
