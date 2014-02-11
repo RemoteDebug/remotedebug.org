@@ -1,0 +1,339 @@
+---
+layout: default
+---
+<section>
+  <h2>DOM</h2>
+    <h3>This section is still work-in-progress.</h3>
+
+    <table class="compatibility">
+      <colgroup>
+        <col>
+          <col span="1" class="ie">
+          <col span="1" class="ff">
+          <col span="1" class="saf">
+          <col span="1" class="op">
+          <col span="1" class="chr">
+      </colgroup>
+      <tbody>
+        <tr class="compheader mobile">
+          <th colspan="1"></th>
+          <th colspan="1">Chrome</th>
+          <th colspan="1">Firefox</th>
+          <th colspan="1">Webkit</th>
+          <th colspan="1">Scope</th>
+        </tr>
+
+        <tr>
+          <td colspan="5">
+            <h3>Operations:</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">getAttributes</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-getAttributes">getAttributes</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+        
+        <tr>
+          <td class="declaration">
+            <div class="name">getDocument</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-getDocument">getDocument</a></td>
+          <td class="comp yes" colspan="1">
+              <a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/inspector.js#L1007">document</a>            
+          </td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">getOuterHTML</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-getOuterHTML">getOuterHTML</a></td>
+          <td class="comp no" colspan="1"></td>>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">hideHighlight</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-hideHighlight">hideHighlight</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">highlightNode</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-highlightNode">highlightNode</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">highlightRect</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-highlightRect">highlightRect</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">moveTo</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-moveTo">moveTo</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">querySelector</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-querySelector">querySelector</a></td>
+          <td class="comp yes" colspan="1">
+              <a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/inspector.js#L1366">querySelector</a>           
+          </td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">querySelectorAll</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-querySelectorAll">querySelectorAll</a></td>
+          <td class="comp yes" colspan="1">
+              <a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/inspector.js#L1392">querySelectorAll</a>
+          </td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">removeAttribute</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-removeAttribute">removeAttribute</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">removeNode</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-removeNode">removeNode</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">requestChildNodes</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-requestChildNodes">requestChildNodes</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">requestNode</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-requestNode">requestNode</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">resolveNode</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-resolveNode">resolveNode</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">setAttributeValue</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-setAttributeValue">setAttributeValue</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">setAttributesAsText</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-setAttributesAsText">setAttributesAsText</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">setNodeName</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-setNodeName">setNodeName</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">setNodeValue</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-setNodeValue">setNodeValue</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">setOuterHTML</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-setOuterHTML">setOuterHTML</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">setOuterHTML</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#command-setOuterHTML">setOuterHTML</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">modifyAttributes</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://github.com/mozilla/gecko-dev/blob/master/toolkit/devtools/server/actors/inspector.js#L331">modifyAttributes</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+
+
+        <tr>
+          <td colspan="5">
+            <h3>Events</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">attributeModified</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#event-attributeModified">attributeModified</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+        
+        <tr>
+          <td class="declaration">
+            <div class="name">attributeRemoved</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#event-attributeRemoved">attributeRemoved</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+        
+        <tr>
+          <td class="declaration">
+            <div class="name">characterDataModified</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#event-characterDataModified">characterDataModified</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+        
+        <tr>
+          <td class="declaration">
+            <div class="name">childNodeCountUpdated</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#event-childNodeCountUpdated">childNodeCountUpdated</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr> 
+               
+        <tr>
+          <td class="declaration">
+            <div class="name">childNodeInserted</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#event-childNodeInserted">childNodeInserted</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>    
+                   
+        <tr>
+          <td class="declaration">
+            <div class="name">childNodeRemoved</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#event-childNodeRemoved">childNodeRemoved</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>     
+                      
+        <tr>
+          <td class="declaration">
+            <div class="name">documentUpdated</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#event-documentUpdated">documentUpdated</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+        <tr>
+          <td class="declaration">
+            <div class="name">setChildNodes</div>
+          </td>
+          <td class="comp yes" colspan="1"><a href="https://developers.google.com/chrome-developer-tools/docs/protocol/tot/dom#event-setChildNodes">setChildNodes</a></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+          <td class="comp no" colspan="1"></td>
+        </tr>
+
+    </tbody>
+  </table>
+
+</section>
