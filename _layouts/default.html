@@ -8,9 +8,8 @@
   </head>
   <body>
 
-    <nav class="collapse navbar-collapse">
-      <div class="inner">
-        <ul class="nav navbar-nav">
+    <nav class="nav-collapse">
+        <ul>
           <li><a href="/">The initative</a></li>
           <li><a href="/roadmap">Roadmap</a></li>
           <li><a href="/specifications">Specification(s)</a></li>
@@ -19,30 +18,11 @@
           <li><a href="/get-involved">Get involved</a></li>
           <li><a href="/faq">FAQ</a></li>
         </ul>
-      </div>
     </nav>
 
-    <header>
-      <div class="inner">
-        <div class="media">
-          <a href="/" class="img logo">
-            <span class="icon-cloud icon-big"></span>
-            <span class="icon-resize-horizontal icon-arrow"></span>
-          </a>
-          <div class="bd">
-            <h1>RemoteDebug</h1>
-            <h2>Initiative to unify remote debugging across browsers.</h2>
-          </div>
-        </div>
-
-        <div class="social">
-          <a href="https://twitter.com/share?url=http://remotedebug.org" class="twitter-share-button" data-via="auchenberg" data-related="auchenberg">Tweet</a>
-          <a href="https://twitter.com/remotedebug" class="twitter-follow-button" data-show-count="true">Follow @remotedebug</a>
-        </div>
-      </div>
-    </header>
-
-    {{ content }}
+    <div class="content">
+      {{ content }}
+    </div>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
