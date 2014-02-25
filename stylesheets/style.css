@@ -204,7 +204,10 @@ section.comments {
     position: static;
   }
   header.intro {
-    padding: 50px 0 0 0;
+    padding: 90px 0 0 0;
+  }
+  header.intro .inner {
+    height: auto;
   }
   header.intro .media .img {
     display: block;
