@@ -1,0 +1,159 @@
+header.page {
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+
+	padding: 10px;
+	height: 90px;
+
+	background: #eee;
+	border-bottom: 1px solid #E7E7E7;
+
+	.logo {
+		display: inline-block;
+		position: relative;
+
+		padding-left: 75px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-decoration: none;
+		color: #333;
+		font-weight: bold;
+		font-size: 25px;
+
+		&.hidden {
+			display: none;
+		}
+
+		.icon-big {
+			font-size: 50px;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			height: 45px;
+			overflow: hidden;
+			color: #428BCA;
+		}
+
+		.icon-arrow {
+			font-size: 20px;
+			position: absolute;
+			left: 25px;
+			bottom: 22px;
+			color: #fff;
+			height: 15px;
+			overflow: hidden;
+			color: #fff;
+		}
+
+	}
+
+	nav {
+		right: 0px;
+		top: 0px;
+		position: absolute !important;
+
+		padding: 20px;
+
+		.inner {
+			padding: 0;
+		}
+
+		ul {
+			min-height: 50px;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			position: relative;
+			display: inline-block;
+			opacity: 0.6;
+			font-size: 14px;
+			font-weight: 300;
+			width: auto;
+
+			&:hover {
+			  border-bottom: 1px solid #757575;    
+			  opacity: 1;
+			}
+
+			> a {
+			  display: block;
+			  padding: 10px 15px;
+			  line-height: 30px;
+
+			  text-decoration: none;
+
+			  &:link,
+			  &:visited {
+			    color: #000;
+			  }
+			}
+
+		}
+
+		&.opened {
+			display: block;
+			position: absolute !important;
+			top: 80px;
+			left: 20px;
+			right: auto;
+			max-height: 500px !important;
+			min-width: 260px;
+
+			box-shadow: rgba(0, 0, 0, 0.298039) 0px 4px 12px;
+
+			background: #fff;
+
+			li {
+				display: block;
+				text-align: left;
+
+				&:hover {
+					border: 0;
+				}
+			}
+
+		}
+
+	}
+
+	.nav-toggle {
+		display: none;
+		text-indent: -9999px;  
+		white-space: nowrap;
+		position: relative;
+		top: 10px;
+
+		height: 35px;
+		width: 35px;
+		overflow: hidden;
+		background-image: url(http://www.polymer-project.org/images/picons/ic_arrowDropDown_dark_.png);
+		background-size: 35px;
+		background-position: 50% 50%;		
+	}
+
+}
+
+
+@media (max-width: 1100px) { 
+
+	header.page {
+		nav {
+			display: none;
+		}
+
+		.logo.hidden {
+			display: inline-block;
+		}
+
+		.nav-toggle {
+			display: inline-block;
+		}
+	}
+
+}

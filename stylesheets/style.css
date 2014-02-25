@@ -10,6 +10,14 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hidden {
+  display: none;
+}
 h1 {
   font-size: 60px;
   margin: 0;
@@ -61,62 +69,31 @@ section {
   padding: 0 30px 30px 30px;
   margin: 0 auto;
 }
-nav {
-  display: block;
-  background: #eee;
-  border-bottom: 1px solid #E7E7E7;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-nav .inner {
-  padding: 0;
-}
-nav ul {
-  min-height: 50px;
-  margin: 0;
-  padding: 0;
-}
-nav li {
-  position: relative;
-  display: inline-block;
-  opacity: 0.6;
-  font-size: 14px;
-  font-weight: 300;
-  width: auto;
-}
-nav li:hover {
-  border-bottom: 1px solid #757575;
-}
-nav li > a {
-  display: block;
-  padding: 10px 15px;
-  line-height: 30px;
-  text-decoration: none;
-}
-nav li > a:link,
-nav li > a:visited {
-  color: #000;
-}
-header {
+header.intro {
   background: #eee;
   margin-bottom: 30px;
-  padding: 190px 0;
-  margin-top: -100px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-top: -90px;
 }
-header h1 {
+header.intro .inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header.intro h1 {
   margin-bottom: 30px;
   font-weight: normal;
 }
-header p {
+header.intro p {
   margin: 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
 }
-header .logo {
+header.intro .logo {
   position: relative;
   height: 350px;
   width: 360px;
@@ -125,29 +102,29 @@ header .logo {
   text-decoration: none;
   display: inline-block;
 }
-header .bd {
-  padding-top: 30px;
-}
-header .logo .icon-big {
+header.intro .logo .icon-big {
   color: #428BCA;
   font-size: 340px;
   position: absolute;
 }
-header .logo .icon-arrow {
+header.intro .logo .icon-arrow {
   color: #fff;
   font-size: 190px;
   position: absolute;
   left: 80px;
   bottom: 40px;
 }
-header .social {
+header.intro .bd {
+  padding-top: 30px;
+}
+header.intro .social {
   margin-top: 20px;
 }
-header .social iframe {
+header.intro .social iframe {
   margin-bottom: 10px;
 }
 .content {
-  padding: 100px 0;
+  padding: 120px 0;
 }
 ul.sub {
   background: rgba(147, 128, 108, 0.1);
@@ -192,6 +169,7 @@ section.comments {
   background: rgba(147, 128, 108, 0.1);
   padding: 30px;
   max-width: 100%;
+  margin-bottom: -120px;
 }
 .embed-container {
   position: relative;
@@ -225,22 +203,22 @@ section.comments {
     background: #fff;
     position: static;
   }
-  header {
-    padding: 20px 0;
+  header.intro {
+    padding: 50px 0 0 0;
   }
-  header .media .img {
+  header.intro .media .img {
     display: block;
     float: none;
   }
-  header .logo {
+  header.intro .logo {
     width: 100%;
     height: 190px;
     margin-left: 20px;
   }
-  header .logo .icon-big {
+  header.intro .logo .icon-big {
     font-size: 200px;
   }
-  header .logo .icon-arrow {
+  header.intro .logo .icon-arrow {
     font-size: 80px;
     bottom: 15px;
     left: 50px;
@@ -280,4 +258,125 @@ section.comments {
 .compatibility .yes {
   background-color: #CF9;
   color: #030;
+}
+header.page {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  padding: 10px;
+  height: 90px;
+  background: #eee;
+  border-bottom: 1px solid #E7E7E7;
+}
+header.page .logo {
+  display: inline-block;
+  position: relative;
+  padding-left: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 25px;
+}
+header.page .logo.hidden {
+  display: none;
+}
+header.page .logo .icon-big {
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 45px;
+  overflow: hidden;
+  color: #428BCA;
+}
+header.page .logo .icon-arrow {
+  font-size: 20px;
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+  height: 15px;
+  overflow: hidden;
+  color: #fff;
+}
+header.page nav {
+  right: 0px;
+  top: 0px;
+  position: absolute !important;
+  padding: 20px;
+}
+header.page nav .inner {
+  padding: 0;
+}
+header.page nav ul {
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+header.page nav li {
+  position: relative;
+  display: inline-block;
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 300;
+  width: auto;
+}
+header.page nav li:hover {
+  border-bottom: 1px solid #757575;
+  opacity: 1;
+}
+header.page nav li > a {
+  display: block;
+  padding: 10px 15px;
+  line-height: 30px;
+  text-decoration: none;
+}
+header.page nav li > a:link,
+header.page nav li > a:visited {
+  color: #000;
+}
+header.page nav.opened {
+  display: block;
+  position: absolute !important;
+  top: 80px;
+  left: 20px;
+  right: auto;
+  max-height: 500px !important;
+  min-width: 260px;
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 4px 12px;
+  background: #fff;
+}
+header.page nav.opened li {
+  display: block;
+  text-align: left;
+}
+header.page nav.opened li:hover {
+  border: 0;
+}
+header.page .nav-toggle {
+  display: none;
+  text-indent: -9999px;
+  white-space: nowrap;
+  position: relative;
+  top: 10px;
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  background-image: url(http://www.polymer-project.org/images/picons/ic_arrowDropDown_dark_.png);
+  background-size: 35px;
+  background-position: 50% 50%;
+}
+@media (max-width: 1100px) {
+  header.page nav {
+    display: none;
+  }
+  header.page .logo.hidden {
+    display: inline-block;
+  }
+  header.page .nav-toggle {
+    display: inline-block;
+  }
 }
