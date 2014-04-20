@@ -3,8 +3,6 @@
     <title>RemoteDebug, an initiative to unify remote debugging across browsers.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/images/remotedebug_logo.png" rel="shortcut icon" sizes="16x16 32x32 64x64" />
-
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
@@ -12,13 +10,16 @@
     <header class="page">
 
       {% if page.hide_header_logo != "true" %}
-      <a href="/" class="logo">
+      <a href="/" class="logo media">
       {% else %}
       <a href="/" class="logo hidden">
       {% endif %}
-        <span class="icon-cloud icon-big"></span>
-        <span class="icon-resize-horizontal icon-arrow"></span>
-        RemoteDebug
+        <div class="img">
+          <img src="/images/logo.svg" />
+        </div>
+        <div class="bd">
+          RemoteDebug
+        </div>
       </a>
       
       <nav class="nav-collapse">
