@@ -3,71 +3,9 @@ layout: default
 ---
 
 <section class="implementations">
+  <h2>Tools, services, editors and other integrations that work with RemoteDebug</h2>
 
-  <h2>Which RemoteDebug bridges/polyfils are available?</h2>
-
-  <p>We have started the work on providing bridges/polyfils for the major browsers. It's still early days.</p>
-
-  <ul class="sub">
-    <li class="firefox media">
-      <div class="img">
-        <img src="/images/firefox.png" />
-      </div>
-      <div class="bd">
-        <h3><a href="https://github.com/auchenberg/remotedebug-firefox-bridge">remotedebug-firefox-bridge</a></h3>
-        <p>Mozilla Firefox to Chrome Remote debugging protocol bridge.</p>
-      </div>
-    </li>
-
-    <li class="webkit media">
-      <div class="img">
-        <img src="/images/webkit.png" />
-      </div>
-      <div class="bd">
-        <h3><a href="https://github.com/google/ios-webkit-debug-proxy">ios-webkit-debug-proxy</a></h3>
-        <p>WebKit Remote Debugging Protocol to Safari Remote Web inspector bridge.</p>
-      </div>
-    </li>
-
-    <li class="node media">
-      <div class="img">
-        <img src="/images/nodejs.png" />
-      </div>
-      <div class="bd">
-        <h3><a href="https://github.com/jkrems/bugger">bugger</a></h3>
-        <p>Node script debugger to Chrome Remote debugging protocol (node-inspector pre-strongloop fork, to stay compatible) </p>
-      </div>
-    </li>
-
-    <li class="node media">
-      <div class="img">
-        <img src="/images/nodejs.png" />
-      </div>
-      <div class="bd">
-        <h3><a href="https://github.com/node-inspector/node-inspector">node-inspector</a></h3>
-        <p>Node script debugger to Chrome Remote debugging protocol (newer version might be in compatible)</p>
-      </div>
-    </li>
-    
-    <li class="ie media">
-      <div class="img">
-        <img src="/images/ie.png" />
-      </div>
-      <div class="bd">
-        <h3>remotedebug-ie-bridge</h3>
-        <p class="italic">Not yet. Is this your new open source project? <a href="https://github.com/new">Make it happen!</a></p>
-      </div>
-    </li>
-
-  </ul>
-
-</section>
-
-
-<section class="implementations">
-  <h2>Tools, editors and integrations that work with RemoteDebug</h2>
-
-  <p>The RemoteDebug protocol (in form of the Chrome Remote Debugging protocol), is already integrated in several tools and editors. Going forward these integrations should be able to work with other browsers, if we suceed with RemoteDebug initiative.</p>
+  <p>This is an overview of the community-built clients, tools and services, that's using the Chrome Remote Debugging protocol.</p>
 
   <h3>Clients:</h3>
   <ul class="sub">
@@ -78,7 +16,17 @@ layout: default
         <p>Node client for Chrome Remote Debugging</p>
       </div>
     </li>
+  </ul>
 
+  <h3>Gateways:</h3>
+  <ul class="sub">
+    <li class="media">
+      <div class="img"><img src="/images/remotedebug_gateway.png" /></div>
+      <div class="bd">
+        <h3><a href="https://github.com/auchenberg/remotedebug-gateway">RemoteDebug Gateway</a></h3>
+        <p>A gateway for RemoteDebug (Chrome Remote Debugging) connections, that allows you to connect a client to multiple endpoints.</p>
+      </div>
+    </li>
   </ul>
 
   <h3>Editors:</h3>
@@ -132,7 +80,7 @@ layout: default
         <img src="/images/selenium.png" />
       </div>
       <div class="bd">
-        <h3><a href="http://docs.seleniumhq.org/projects/webdriver/">Selenium WebDriver for Chrome</a></h3>
+        <h3><a href="http://docs.seleniumhq.org/projects/webdriver/">WebDriver for Chrome</a></h3>
         <p>The Selenium WebDriver implementation for Chrome that users Chrome debugging protocol.</p>
       </div>
     </li>
@@ -152,6 +100,19 @@ layout: default
       <div class="bd">
         <h3><a href="https://github.com/sidorares/crconsole">crconsole</a></h3>
         <p>Remote JavaScript console for Chrome/Webkit.</p>
+      </div>
+    </li>
+  </ul>
+
+  <h3>Services:</h3>
+  <ul class="sub">
+    <li class="calibra media">
+      <div class="img">
+
+      </div>
+      <div class="bd">
+        <h3><a href="https://calibreapp.com/">Calibre</a></h3>
+        <p>Performance benchmarking service who's using remote debugging for Chrome behind the scenes.</p>
       </div>
     </li>
   </ul>
