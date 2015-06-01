@@ -8,9 +8,7 @@ layout: default
 
   <p>The long-term goal is to get all major browser vendors to implement and use the "RemoteDebug", but we know this is going to take some time, especially to get everyone on board.</p>
 
-  <img src="/images/remotedebug_overview.png" class="overview-img" />
-
-  <p>So how are we going to make this happen?</p>
+  <img src="/images/remotedebug_protocol_adaptors.png" class="overview-img" />
 
   <h3>1. Protocol and API baseline</h3>
   <p>The first thing is to get a baseline for the protocol and API. The current proposal is to use the existing <a href="https://developers.google.com/chrome-developer-tools/docs/debugger-protocol" target="_blank">Chrome Remote debugging protocol</a> as our starting point to define what we would call the RemoteDebug protocol and RemoteDebug API.</p>
@@ -46,9 +44,9 @@ layout: default
     </li>
   </ul>
 
-  <h3>4. Provide bridges/polyfils for browsers</h3>
-  <p>Once the first revisions of the protocol and API has been stablized, the work on providing bridges/polyfils for the existing remote debugging protocols should be started. A prototype of such a bridge has already been demonstrated by Kenneth Auchenberg, with his <a href="https://github.com/auchenberg/remotedebug-firefox-bridge">remotedebug-firefox-bridge</a>.</p>
-  <p>Currently the thinking is that the target browsers should be priorized after market share.</p>
+  <h3>4. Provide protcol adaptors for browsers</h3>
+  <p>Once the first revisions of the protocol and API has been stablized, the work on providing protocol adaptors for the existing remote debugging protocols should be started. A prototype of such a bridge has already been demonstrated by Kenneth Auchenberg, with his <a href="https://github.com/auchenberg/remotedebug-firefox-bridge">remotedebug-firefox-bridge</a>.</p>
+  <p>Currently the thinking is that the taget browsers should be priorized after market share.</p>
 
   <h3>5. Make browsers use RemoteDebug as their default interface</h3>
   <p>A standards and political effort for browsers to support the RemoteDebug protocol and RemoteDebug API as their primary, should be started.</p>
