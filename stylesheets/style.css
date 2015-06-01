@@ -50,7 +50,7 @@ ul > li {
   line-height: 180%;
 }
 .overview-img {
-  max-width: 1000px;
+  max-width: 600px;
   width: 100%;
 }
 .media {
@@ -82,6 +82,13 @@ header.intro .inner {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+header.intro .media {
+  overflow: auto;
+}
+header.intro .status {
+  width: 100%;
+  text-align: center;
 }
 header.intro h1 {
   margin-bottom: 30px;
@@ -141,11 +148,11 @@ ul.sub li .img {
   height: 40px;
   background: #fff;
   border-radius: 5px;
-  padding: 20px;
+  padding: 5px 0;
   text-align: center;
 }
 section.implementations li .img > img {
-  width: 40px;
+  width: 30px;
 }
 section.implementations li.node img {
   padding-top: 10px;
