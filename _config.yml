@@ -2,5 +2,5 @@ highlighter: true
 domain: remotedebug.org
 source:      ./
 destination: ./_site
-lessc: /usr/local/bin/lessc
+lessc: /Users/auchenberg/.rvm/gems/ruby-2.2.3/bin/lessc
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
