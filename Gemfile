@@ -5,3 +5,4 @@ gem 'github-pages'
 gem "less"
 gem "therubyracer"
 gem "jekyll"
+gem 'jekyll-sitemap'

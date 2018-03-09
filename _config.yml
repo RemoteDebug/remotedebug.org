@@ -2,5 +2,7 @@ highlighter: true
 domain: remotedebug.org
 source:      ./
 destination: ./_site
-lessc: /Users/auchenberg/.rvm/gems/ruby-2.2.3/bin/lessc
+lessc: lessc
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+plugins:
+  - jekyll-sitemap
